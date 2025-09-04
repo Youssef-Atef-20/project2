@@ -158,6 +158,7 @@ header button:hover {
     gap: 10px;
     text-align: center;
     margin-top: 60px;
+    padding-bottom: 30px;
 }
 
 .cards {
