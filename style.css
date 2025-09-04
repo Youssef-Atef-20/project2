@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+nav, header {
+    background-color: #74C69D;
+}
+
+.nav {
+    display: flex;
+    padding: 2vh 8vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav img {
+    width: 160px;
+    max-width: 30vw;
+    height: auto;
+}
+
+.pages {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.pages a:hover {
+    color: #222;
+}
+
+/* ---------- Header ---------- */
+header {
+    display: flex;
+    color: white;
+    padding: 8vh 8vw;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 40vw;
+    max-width: 500px;
+}
+
+header h1 {
+    font-size: clamp(28px, 5vw, 60px);
+    line-height: 1.2;
+}
+
+header p {
+    padding: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+header button {
+    padding: 10px 25px;
+    border: none;
+    background: white;
+    color: #74C69D;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header button:hover {
+    background: #f2f2f2;
+}
+
+/* ---------- Partners ---------- */
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.partners_pictures {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+    flex-wrap: wrap;
+}
+
+.partners button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ---------- Second & Third Sections ---------- */
+.second_group,
+.third_group {
+    display: flex;
+    gap: 5vw;
+    margin: 60px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.second_group img,
+.third_group img {
+    width: 40vw;
+    max-width: 500px;
+}
+
+.second_part,
+.third_part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.second_part button,
+.third_part button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- Team ---------- */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    max-width: 260px;
+    text-align: center;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #74C69D;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8vw;
+    gap: 20px;
+}
+
+footer p {
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    header img {
+        width: 70%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pages {
+        gap: 10px;
+    }
+
+    .second_group img,
+    .third_group img {
+        width: 80vw;
+    }
+
+    .second_part,
+    .third_part {
+        text-align: center;
+        align-items: center;
+    }
+
+    .second_part button,
+    .third_part button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 9vw;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
